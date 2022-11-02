@@ -18,7 +18,7 @@ After, you have to create a Decrypter with two function and an object decrypter 
 object to crack the password.
 You can verify that the code was cracked by using unit tests.
 
-Latest stable release 1.0.1 
+Latest stable release 1.0.3 
 
 
 Arthur OLIVIER
