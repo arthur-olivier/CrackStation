@@ -7,7 +7,7 @@ final class CrackStationTests: XCTestCase {
     public func testCrack() throws  {
         
         // When
-        let shaHash = "29c1b289e7522195b362e44f54e05470b69ad20540ab60a18a05e5bf6951f13d"
+        let shaHash = "c29dd6c83b67a1d6d3b28588a1f068b68689aa1d"
     
         let password = CrackStation().decrypt(shaHash: shaHash)
     
@@ -16,7 +16,7 @@ final class CrackStationTests: XCTestCase {
         }
         
        // Then
-        XCTAssertEqual(password, "m2")
+        XCTAssertEqual(password, "ao")
             
         }
 }
