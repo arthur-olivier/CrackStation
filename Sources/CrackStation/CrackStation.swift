@@ -1,10 +1,20 @@
 import Foundation
 
-public protocol Decrypter {
-    init()
-    func decrypt(shaHash: String) -> String?
-}
+public struct CrackStation: Decrypter {
+    private let lookuptable : [String : String]
+    
+    public init() {
+        do {
+            lookuptable = try GetLookUpTable().loadDictionaryFromDisk()
+        }
+        catch{ lookuptable = ["":""]}
+    }
 
+    public func decrypt(shaHash: String) -> String? {
+        let password = lookuptable[shaHash]
+        return password
+    }
+}
 public class GetLookUpTable {
      func loadDictionaryFromDisk() throws -> [String : String] {
         guard let path = Bundle.module.url(forResource: "data", withExtension: "json") else { return [:] }
