@@ -8,7 +8,7 @@ Passwords are encrypted in different way . There are a lot of crackstation that 
 
 # Mission Statement 
 
-My Swift library is a cracking station for passwords coded with sha1 and sha256.
+My Swift library is a cracking station for passwords coded with sha1 and sha256. My Decrypter cracks unsalted hashes. <br/>
 It is able to crack to any password up to three characters in length, which matches the regular expression `[A-Za-z0-9!?]{1,3}` and is encrypted 
 using `SHA-1` or `SHA-256`.
 This library is for a project in my school and the first purpose of it is not to crack password of real person.
@@ -16,7 +16,7 @@ You can use it to understand how a crackstation works.
 
 # Installation 
 
-The Swift Package Manager is "a tool for managing the distribution of Swift code. It's integrated with Swift build system to automate the process of downloading, compiling, and linking dependencies."
+The  [Swift Package Manager](https://www.swift.org/package-manager)  is "a tool for managing the distribution of Swift code. It's integrated with Swift build system to automate the process of downloading, compiling, and linking dependencies."
 <br/>
 <br/>
 Once you have your Swift package set up, add CrackStation to the list of dependencies in your file:
