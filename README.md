@@ -8,6 +8,8 @@ Passwords are encrypted in different way . There are a lot of crackstation that 
 
 # Mission Statement 
 
+Help understanding the functioning of a crackstation
+
 My Swift library is a cracking station for passwords coded with sha1 and sha256. My Decrypter cracks unsalted hashes. <br/>
 It is able to crack to any password up to three characters in length, which matches the regular expression `[A-Za-z0-9!?]{1,3}` and is encrypted 
 using `SHA-1` or `SHA-256`.
